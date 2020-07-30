@@ -3,11 +3,6 @@
 
 <head>
     <title>Multimedia Demo</title>
-    <script>
-        window.onload = function() {
-          var context = new AudioContext();
-        }
-    </script>
 </head>
 
 <body>
@@ -32,6 +27,7 @@
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/220px-The_Earth_seen_from_Apollo_17.jpg" />
     </center>
     <br>
+    <iframe src="abc.mp3" allow="autoplay" id="audio"></iframe>
     <audio controls autoplay>
       <source src="sample_mp3.mp3" type="audio/mp3">
       Your browser does not support the audio element.
