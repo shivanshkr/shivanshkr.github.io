@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multimedia Demo</title>
+
+</head>
+
+<body>
+
+    <a href="https://google.com/">Google</a><br>
+    <img src="google.jpg" alt="Google homepage"><br>
+
+    <audio controls="controls" src="sample_mp3.mp3">
+        <!-- loop autoplay preload="metadata" -->
+        Your browser does not support the
+        <code>audio</code> element.
+    </audio><br>
+    <video controls="controls" src="flower.webm" width="250" height="100"></video><br>
+    <!-- for mentioning more than one source as alternative -->
+    <video controls="controls" width="250">
+        <source src="flower.mp4" type="video/mp4">
+        <source src="flower.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+    </video><br>
+    <center>Learning to use Image element with its attributes<br><br>
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/220px-The_Earth_seen_from_Apollo_17.jpg" />
+    </center>
+    <br>
+    <audio id="myAudio" >
+        <source src="sample_mp3.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio><br>
+    <script>
+        var x = document.getElementById("myAudio");
+        x.autoplay = false;
+        x.autoplay = true;
+        alert("hello")
+        x.load();
+    </script>
+ <!-- <embed src="sample_mp3.mp3"  loop="true" autostart="true" width="2" height="0"> -->
+</body>
+
+</html>
